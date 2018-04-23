@@ -2,7 +2,7 @@ var colors1=173;
 var colors2=241;
 var colors3=255;
 function setup() {
-  createCanvas(1000,1000)
+  createCanvas(windowWidth,windowHeight);
   background(188,173,255);
 }
 
@@ -21,4 +21,7 @@ colors1= random(1,255);
 colors2= random(1,255);
 colors3= random(1,255);
 	
+}
+function windowResized() {
+  resizeCanvas(windowWidth,windowHeight);
 }
